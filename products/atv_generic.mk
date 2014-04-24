@@ -26,6 +26,7 @@ PRODUCT_LOCALES := en_US
 
 # Include drawables for various densities.
 PRODUCT_AAPT_CONFIG := normal large xlarge tvdpi hdpi xhdpi xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # From build/target/product/full_base.mk
 PRODUCT_PACKAGES += \
