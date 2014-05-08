@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+PRODUCT_PACKAGES_DEBUG := \
+    AtscTvInput \
+    SampleTvInput
+
 PRODUCT_COPY_FILES := \
     $(foreach f,$(wildcard device/google/atv/skins/AndroidTV/*),$(f):skin/$(notdir $(f)))
 

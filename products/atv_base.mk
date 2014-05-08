@@ -14,15 +14,11 @@
 # limitations under the License.
 #
 
-# There packages are still in experimental repository.
-# TODO: Add back when build recovers.
-#PRODUCT_PACKAGES := \
-#    AtscTvInput \
-#    SampleTvInput \
-#    TV \
-#    TvProvider
-
-PRODUCT_PACKAGES := \
+# For now, include TV related packages only for non-user builds.
+# TODO: Add to user build when ready.
+PRODUCT_PACKAGES_DEBUG := \
+    TV \
+    TvProvider \
     tv_input.default
 
 PRODUCT_COPY_FILES := \
@@ -36,7 +32,6 @@ PRODUCT_PACKAGES += \
     ContactsProvider \
     DefaultContainerService \
     UserDictionaryProvider \
-    atrace \
     libaudiopreprocessing \
     libfilterpack_imageproc \
     libgabi++ \
@@ -60,8 +55,7 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_vpxdec \
     libstagefright_soft_vpxenc \
     mdnsd \
-    requestsync \
-    screenrecord
+    requestsync
 
 # From build/target/product/core.mk
 PRODUCT_PACKAGES += \
@@ -86,7 +80,8 @@ PRODUCT_PACKAGES += \
     librs_jni \
     audio.primary.default \
     audio_policy.default \
-    local_time.default
+    local_time.default \
+    screenrecord
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libeffects/data/audio_effects.conf:system/etc/audio_effects.conf
