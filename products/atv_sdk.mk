@@ -15,7 +15,8 @@
 #
 
 PRODUCT_PACKAGES := \
-    audio.primary.goldfish
+    audio.primary.goldfish \
+    EmulatorSmokeTests
 
 PRODUCT_PACKAGE_OVERLAYS := \
     device/google/atv/sdk_overlay \
@@ -36,7 +37,7 @@ PRODUCT_AAPT_CONFIG := normal large xlarge tvdpi hdpi xhdpi xxhdpi
 # Add TV skins to SDK, in addition to (not replacing) original SDK tree
 PRODUCT_SDK_ATREE_FILES := \
     development/build/sdk.atree \
-    device/google/atv/products/atv_skins.atree
+    device/google/atv/sdk/atv_sdk.atree
 
 # Define the host tools and libs that are parts of the SDK.
 -include sdk/build/product_sdk.mk
