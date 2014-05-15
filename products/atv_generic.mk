@@ -19,7 +19,7 @@ PRODUCT_PACKAGES_DEBUG := \
     SampleTvInput
 
 PRODUCT_COPY_FILES := \
-    $(foreach f,$(wildcard device/google/atv/skins/AndroidTV/*),$(f):skin/$(notdir $(f)))
+    device/google/atv/config.ini:config.ini
 
 PRODUCT_PACKAGE_OVERLAYS := \
     device/google/atv/sdk_overlay \

@@ -19,6 +19,3 @@ ${HOST_OUT}/device/google/atv/sdk/images_${TARGET_CPU_ABI}_source.properties  sy
 
 # devices.xml file with custom device definitions
 device/google/atv/sdk/devices.xml   system-images/${PLATFORM_NAME}/${TARGET_CPU_ABI}/devices.xml
-
-# Android TV skins
-device/google/atv/skins/AndroidTV   system-images/${PLATFORM_NAME}/${TARGET_CPU_ABI}/skins/AndroidTV
