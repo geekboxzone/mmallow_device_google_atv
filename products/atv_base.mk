@@ -70,7 +70,8 @@ PRODUCT_PACKAGES += \
     PacProcessor \
     PrintSpooler \
     ProxyHandler \
-    SharedStorageBackup
+    SharedStorageBackup \
+    TeleService
 
 # From build/target/product/generic_no_telephony.mk
 PRODUCT_PACKAGES += \
