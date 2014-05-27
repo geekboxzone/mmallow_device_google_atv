@@ -28,7 +28,4 @@
     <!-- Width of the navigation bar when it is placed vertically on the screen -->
     <dimen name="navigation_bar_width">42dp</dimen>
 
-    <!-- Volume panel y offset -->
-    <dimen name="volume_panel_top">400dp</dimen>
-
 </resources>
