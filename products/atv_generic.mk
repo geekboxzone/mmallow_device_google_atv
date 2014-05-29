@@ -14,10 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_PACKAGES_DEBUG := \
-    AtscTvInput \
-    SampleTvInput
-
 PRODUCT_COPY_FILES := \
     device/google/atv/config.ini:config.ini
 
