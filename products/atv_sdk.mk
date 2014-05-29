@@ -18,7 +18,7 @@ PRODUCT_PACKAGES := \
     audio.primary.goldfish \
     EmulatorSmokeTests
 
-PRODUCT_PACKAGE_OVERLAYS := \
+DEVICE_PACKAGE_OVERLAYS := \
     device/google/atv/sdk_overlay \
     development/sdk_overlay
 
