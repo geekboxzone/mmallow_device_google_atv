@@ -17,7 +17,7 @@
 PRODUCT_COPY_FILES := \
     device/google/atv/config.ini:config.ini
 
-PRODUCT_PACKAGE_OVERLAYS := \
+DEVICE_PACKAGE_OVERLAYS := \
     device/google/atv/sdk_overlay \
     development/sdk_overlay
 
