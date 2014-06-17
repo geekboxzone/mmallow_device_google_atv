@@ -19,10 +19,4 @@
     <!-- development/sdk_overlay enables voice. Reset to data-only. -->
     <bool name="config_voice_capable">false</bool>
 
-    <!-- development/sdk_overlay enables only default location providers.
-         Add a mock location provider for network location. -->
-    <string-array name="config_testLocationProviders" translatable="false">
-        <item>network,false,false,false,false,true,true,true,1,2</item>
-    </string-array>
-
 </resources>

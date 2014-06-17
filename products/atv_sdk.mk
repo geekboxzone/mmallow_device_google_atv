@@ -15,8 +15,10 @@
 #
 
 PRODUCT_PACKAGES := \
+    EmulatorSmokeTests \
+    TelephonyProvider \
     audio.primary.goldfish \
-    EmulatorSmokeTests
+    rild
 
 DEVICE_PACKAGE_OVERLAYS := \
     device/google/atv/sdk_overlay \
