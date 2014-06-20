@@ -36,7 +36,6 @@ PRODUCT_PACKAGES += \
     libfilterpack_imageproc \
     libgabi++ \
     libkeystore \
-    libportable \
     libstagefright_soft_aacdec \
     libstagefright_soft_aacenc \
     libstagefright_soft_amrdec \
