@@ -31,6 +31,7 @@
             </d:networking>
             <d:sensors>
                 LightSensor
+                GPS
             </d:sensors>
             <d:mic>true</d:mic>
             <d:keyboard>qwerty</d:keyboard>
@@ -99,6 +100,7 @@
             </d:networking>
             <d:sensors>
                 LightSensor
+                GPS
             </d:sensors>
             <d:mic>true</d:mic>
             <d:keyboard>qwerty</d:keyboard>
