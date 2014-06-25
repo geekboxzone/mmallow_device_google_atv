@@ -14,9 +14,7 @@
 # limitations under the License.
 #
 
-# For now, include TV related packages only for non-user builds.
-# TODO: Add to user build when ready.
-PRODUCT_PACKAGES_DEBUG := \
+PRODUCT_PACKAGES := \
     TV \
     TvProvider \
     tv_input.default
