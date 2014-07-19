@@ -1,4 +1,4 @@
-ifneq ($(filter atv_sdk% atv_google_sdk%,$(TARGET_PRODUCT)),)
+ifeq ($(PRODUCT_IS_ATV_SDK),true)
 # Refer to development/build/Android.mk
 source_properties_file := \
     $(HOST_OUT)/device/google/atv/sdk/images_$(TARGET_CPU_ABI)_source.properties

@@ -14,9 +14,10 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/google/atv/products/atv_sdk.mk)
+# TODO: separate out a common base for arm/x86 atv SDK build.
+$(call inherit-product, device/google/atv/products/sdk_atv_armv7.mk)
 
 # Overrides
-PRODUCT_NAME := atv_sdk_x86
+PRODUCT_NAME := sdk_atv_x86
 PRODUCT_DEVICE := generic_x86
 PRODUCT_BRAND := generic_x86

@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+PRODUCT_IS_ATV_SDK := true
+
 PRODUCT_PACKAGES := \
     EmulatorSmokeTests \
     TelephonyProvider \
@@ -60,6 +62,6 @@ $(call inherit-product, device/google/atv/products/atv_base.mk)
 -include external/svox/pico/lang/PicoLangItItInSystem.mk
 
 # Overrides
-PRODUCT_NAME := atv_sdk
+PRODUCT_NAME := sdk_atv_armv7
 PRODUCT_DEVICE := generic
 PRODUCT_BRAND := generic
