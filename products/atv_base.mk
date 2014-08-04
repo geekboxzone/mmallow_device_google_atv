@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+PRODUCT_IS_ATV := true
+
 PRODUCT_PACKAGES := \
     TV \
     TvProvider \
