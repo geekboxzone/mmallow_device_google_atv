@@ -72,7 +72,8 @@ PRODUCT_PACKAGES += \
     PrintSpooler \
     ProxyHandler \
     SharedStorageBackup \
-    TeleService
+    TeleService \
+    VpnDialogs
 
 # From build/target/product/generic_no_telephony.mk
 PRODUCT_PACKAGES += \
