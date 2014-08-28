@@ -30,6 +30,7 @@
     <feature name="android.software.device_admin" />
     <feature name="android.software.leanback" />
     <feature name="android.software.leanback_only" />
+    <feature name="android.software.live_tv" />
     <feature name="android.software.print" />
 
 </permissions>
