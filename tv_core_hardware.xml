@@ -27,7 +27,6 @@
 
     <feature name="android.software.app_widgets" />
     <feature name="android.software.backup" />
-    <feature name="android.software.device_admin" />
     <feature name="android.software.leanback" />
     <feature name="android.software.leanback_only" />
     <feature name="android.software.live_tv" />
