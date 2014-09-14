@@ -45,4 +45,7 @@
     <!-- Override long press on home: launch assist intent. -->
     <integer name="config_longPressOnHomeBehavior">2</integer>
 
+    <!-- Override configuration check for dpad so that we always appear to have one -->
+    <bool name="config_hasPermanentDpad">true</bool>
+
 </resources>
