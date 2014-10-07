@@ -17,8 +17,8 @@
 PRODUCT_IS_ATV := true
 
 PRODUCT_PACKAGES := \
-    TV \
     TvProvider \
+    TvSettings \
     tv_input.default
 
 PRODUCT_COPY_FILES := \
