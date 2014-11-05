@@ -67,6 +67,7 @@ PRODUCT_PACKAGES += \
     FusedLocation \
     InputDevices \
     KeyChain \
+    Launcher2 \
     PicoTts \
     PacProcessor \
     PrintSpooler \
