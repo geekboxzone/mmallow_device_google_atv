@@ -22,7 +22,7 @@ PRODUCT_PACKAGES := \
     tv_input.default
 
 PRODUCT_COPY_FILES := \
-    device/google/atv/tv_core_hardware.xml:system/etc/permissions/tv_core_hardware.xml
+    device/google/atv/permissions/tv_core_hardware.xml:system/etc/permissions/tv_core_hardware.xml
 
 DEVICE_PACKAGE_OVERLAYS := \
     device/google/atv/overlay
@@ -99,6 +99,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 EXTENDED_FONT_FOOTPRINT := true
 # Use full NotoSans font
 FONT_NOTOSANS_FULL := true
+
+# A feature com.google.android.tv.live_channels is used to whitelist
+# devices which can support Live Channels app
+ifeq ($(USE_GMS_LIVECHANNELS),true)
+    PRODUCT_COPY_FILES += \
+        device/google/atv/permissions/com.google.android.tv.live_channels.xml:system/etc/permissions/com.google.android.tv.live_channels.xml
+endif
 
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AllAudio.mk)
 $(call inherit-product-if-exists, external/svox/pico/lang/all_pico_languages.mk)
