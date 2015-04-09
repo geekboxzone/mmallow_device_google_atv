@@ -100,11 +100,14 @@ EXTENDED_FONT_FOOTPRINT := true
 # Use full NotoSans font
 FONT_NOTOSANS_FULL := true
 
-# A feature com.google.android.tv.live_channels is used to whitelist
-# devices which can support Live Channels app
-ifeq ($(USE_GMS_LIVECHANNELS),true)
+# Do not include the Live Channels app if USE_OEM_TV_APP flag is set.
+# The feature com.google.android.tv.installed is used to tell whether a device
+# has the pre-installed Live Channels app. This is necessary for the Play Store
+# to identify the compatible devices that can install later updates of the app.
+ifneq ($(USE_OEM_TV_APP),true)
+    PRODUCT_PACKAGES += TV
     PRODUCT_COPY_FILES += \
-        device/google/atv/permissions/com.google.android.tv.live_channels.xml:system/etc/permissions/com.google.android.tv.live_channels.xml
+        device/google/atv/permissions/com.google.android.tv.installed.xml:system/etc/permissions/com.google.android.tv.installed.xml
 endif
 
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AllAudio.mk)
